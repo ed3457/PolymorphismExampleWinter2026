@@ -24,3 +24,8 @@ BankAccount::BankAccount(float b)
 {
 	balance = b;
 }
+
+float BankAccount::getBalance()
+{
+	return balance;
+}

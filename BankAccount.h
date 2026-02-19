@@ -14,5 +14,7 @@ public:
 
 	BankAccount();
 	BankAccount(float b);
+
+	float getBalance();
 };
 

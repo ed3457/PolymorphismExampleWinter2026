@@ -20,10 +20,10 @@ SavingsAccount::SavingsAccount(float b, float r):BankAccount(b)
 	setRate(r);
 }
 
-void BankAccount::withdraw(float a)
+void SavingsAccount::withdraw(float a)
 {
 	//TODO: Validate the balance 
-	balance -= (a+5);
+	BankAccount::withdraw(a+5);
 
 
 }
