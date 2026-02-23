@@ -123,11 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bank.cpp" />
     <ClCompile Include="BankAccount.cpp" />
     <ClCompile Include="PolymorphismExampleWinter2026.cpp" />
     <ClCompile Include="SavingsAccount.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bank.h" />
     <ClInclude Include="BankAccount.h" />
     <ClInclude Include="SavingsAccount.h" />
   </ItemGroup>
