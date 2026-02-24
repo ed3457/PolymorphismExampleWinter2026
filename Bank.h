@@ -14,5 +14,9 @@ public:
 
 	void OpenNewAccount(); 
 	void WithdrawFromAll(float b);
+
+	void resetAccounts();
+
+	float getAccountBalanceSum(); 
 };
 

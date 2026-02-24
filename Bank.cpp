@@ -58,3 +58,21 @@ void Bank::WithdrawFromAll(float b)
 	}
 
 }
+
+void Bank::resetAccounts()
+{
+	for (int i = 0; i < counter; i++)
+		delete accounts[i];
+
+	delete[] accounts; 
+
+}
+
+float Bank::getAccountBalanceSum()
+{
+	float sum = 0;
+	for (int i = 0; i < counter; i++)
+		sum+=accounts[i]->getBalance();
+
+	return sum;
+}
