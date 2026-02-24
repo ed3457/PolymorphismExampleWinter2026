@@ -13,6 +13,6 @@ public:
 	Bank(); 
 
 	void OpenNewAccount(); 
-
+	void WithdrawFromAll(float b);
 };
 

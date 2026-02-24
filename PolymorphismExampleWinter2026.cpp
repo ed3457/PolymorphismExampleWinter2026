@@ -41,5 +41,6 @@ int main()
 	Chase.OpenNewAccount();
 	Chase.OpenNewAccount();
 
+	Chase.WithdrawFromAll(200);
 }
 

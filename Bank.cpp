@@ -18,14 +18,25 @@ void Bank::OpenNewAccount()
 	switch (choice) 
 	{
 	case 'b': case 'B':
-	{
-		accounts[counter] = new BankAccount();
+	{   
+		cout << "Enter Balance:\n";
+		float balance; 
+		cin >> balance;
+
+		accounts[counter] = new BankAccount(balance);
 		counter++;
 	}
 	break; 
 	case 's': case 'S':
 	{
-		accounts[counter] = new SavingsAccount();
+		cout << "Enter Balance:\n";
+		float balance;
+		cin >> balance;
+
+		cout << "Enter Rate:\n";
+		float rate;
+		cin >> rate;
+		accounts[counter] = new SavingsAccount(balance,rate);
 		counter++;
 	}
 	break;
@@ -34,6 +45,16 @@ void Bank::OpenNewAccount()
 		cout << "Wrong choice!\n";
 		break; 
 
+	}
+
+}
+
+void Bank::WithdrawFromAll(float b)
+{
+	for (int i=0; i < counter; i++)
+	{
+		accounts[i]->withdraw(b);
+		cout << "Balance left = " << accounts[i]->getBalance()<<endl;
 	}
 
 }
