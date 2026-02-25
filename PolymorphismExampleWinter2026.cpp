@@ -44,6 +44,6 @@ int main()
 	Chase.WithdrawFromAll(200);
 
 	cout << Chase.getAccountBalanceSum();
-	Chase.resetAccounts();
+	//Chase.resetAccounts();
 }
 

@@ -76,3 +76,8 @@ float Bank::getAccountBalanceSum()
 
 	return sum;
 }
+
+Bank::~Bank()
+{
+	resetAccounts();
+}

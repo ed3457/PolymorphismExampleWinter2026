@@ -18,5 +18,6 @@ public:
 	void resetAccounts();
 
 	float getAccountBalanceSum(); 
+	~Bank();// Destructor: Gets called when an object is out of scope, used to clean up resources 
 };
 

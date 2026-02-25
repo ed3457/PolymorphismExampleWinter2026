@@ -8,7 +8,7 @@ private:
 
 public:
 
-	virtual void withdraw(float a);
+	virtual void withdraw(float a);// late binding 
 
 	void deposit(float a); 
 
