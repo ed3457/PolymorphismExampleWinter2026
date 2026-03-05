@@ -20,5 +20,11 @@ public:
 	BankAccount operator -(float num); 
 
 	BankAccount operator + (const BankAccount& ba); 
+
+	// task: Write an operator, *,  that will multiply the balance by a certain interest rate 
+
+	BankAccount operator *(float rate );
+
+
 };
 

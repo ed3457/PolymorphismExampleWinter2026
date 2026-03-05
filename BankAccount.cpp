@@ -40,3 +40,8 @@ BankAccount BankAccount::operator+(const BankAccount& ba)
 {   
 	return BankAccount(balance+ ba.balance);
 }
+
+BankAccount BankAccount::operator*(float rate)
+{    
+	return BankAccount(balance*rate);
+}
