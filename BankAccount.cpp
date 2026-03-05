@@ -29,3 +29,14 @@ float BankAccount::getBalance()
 {
 	return balance;
 }
+
+BankAccount BankAccount::operator-(float num)
+{   
+	withdraw(num);
+	return BankAccount(num);
+}
+
+BankAccount BankAccount::operator+(const BankAccount& ba)
+{   
+	return BankAccount(balance+ ba.balance);
+}

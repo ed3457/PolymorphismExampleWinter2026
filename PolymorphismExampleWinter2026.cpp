@@ -35,7 +35,7 @@ int main()
 
 	// next step: Put objects into an array to execute one function for all 
 
-	Bank Chase;
+	/*Bank Chase;
 
 	Chase.OpenNewAccount();
 	Chase.OpenNewAccount();
@@ -43,7 +43,21 @@ int main()
 
 	Chase.WithdrawFromAll(200);
 
-	cout << Chase.getAccountBalanceSum();
+	cout << Chase.getAccountBalanceSum();*/
 	//Chase.resetAccounts();
+
+	BankAccount b1(1000);
+
+	b1 - 200;
+
+	cout << b1.getBalance()<<endl;
+
+	BankAccount b2(1000);
+
+	BankAccount newAccount = b1 + b2; 
+
+	cout << newAccount.getBalance();
+
+
 }
 

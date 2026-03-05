@@ -16,5 +16,9 @@ public:
 	BankAccount(float b);
 
 	float getBalance();
+
+	BankAccount operator -(float num); 
+
+	BankAccount operator + (const BankAccount& ba); 
 };
 
